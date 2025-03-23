@@ -1,5 +1,5 @@
 ![icon](fliphonewizard2.png)
-#Fliphone Wizard
+# Fliphone Wizard
 ## Made By: Fliphone Bochur 
 ***
 ## What
