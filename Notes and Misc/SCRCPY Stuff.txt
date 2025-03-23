@@ -1,0 +1,21 @@
+        self.scrcpy_button = QtWidgets.QPushButton("SCRCPY")
+
+        self.scrcpy_button.setEnabled(False)
+        
+        self.scrcpy_button.clicked.connect(self.scrcpy)
+        
+        layout.addWidget(self.scrcpy_button, 4, 0, 1, 2)
+        
+    def scrcpy(self):
+        try:
+            subprocess.Popen(["wscript.exe", "scrcpy-noconsole.vbs"])
+        except Exception as e:
+            QtWidgets.QMessageBox.critical(self, "Error", str(e))
+            
+        self.scrcpy_button.setEnabled(self.device_connected)
+        
+            self.scrcpy_button.setEnabled(False)        
+
+Note: SCRCPY doesn't work on the Kyocera Cadence\n\n
+
+The program also has a button to launch SCRCPY (pronounced Screen Copy) which you can use to mirror your phone screen and control it. 

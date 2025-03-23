@@ -1,0 +1,1 @@
+pyinstaller --add-data "fliphonewizard.ico;." --add-data "adb.exe;." --add-data "AdbWinApi.dll;." --add-data "AdbWinUsbApi.dll;." --add-data "credits.md;." --add-data "fliphonewizard2.png;." --add-data "fwbanner.png;." --add-data "scrcpy.exe;." --add-data "scrcpy-noconsole.vbs;." --add-data "scrcpy-server;." --onefile "Fliphone Wizard.pyw"
